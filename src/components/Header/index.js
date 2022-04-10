@@ -35,17 +35,21 @@ const Header = () => {
 						</li>
 
 						<li>
-							<a className='cat' href='#'>
-								{' '}
-								Story{' '}
-							</a>
+							<Link to='/story'>
+								<a className='cat' href='#'>
+									{' '}
+									Story{' '}
+								</a>
+							</Link>
 						</li>
 
 						<li>
-							<a className='cat' href='#'>
-								{' '}
-								Contact{' '}
-							</a>
+							<Link to='/contact'>
+								<a className='cat' href='#'>
+									{' '}
+									Contact{' '}
+								</a>
+							</Link>
 						</li>
 					</ul>
 				</section>

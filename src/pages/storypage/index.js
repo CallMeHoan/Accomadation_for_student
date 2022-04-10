@@ -14,16 +14,26 @@ const aboutpage = () => {
 		<div>
 			<section id='about_banner'>
 				<div id='about_banner_cointainer'>
-					<img id='banner_img' src={about_banner} />
+					<img id='banner_img' src={about_banner} alt='Banner' />
 				</div>
 			</section>
 			<section id='intro_story'>
-				<img id='logo' src={logo}></img>
+				<img id='logo' src={logo} alt='Logo'></img>
 				<div className='intro_content_story'>
-					Located above Crans-Montana mountain resort, on the edge of a peaceful Alpine forest,
-					LeCrans is a haven of warmth, tranquillity and restoration. Bathed in the resplendent
-					sunshine and crystal-clear skies, it offers breath-taking views of the highest peaks of
-					the Swiss Alps.
+					“Scrum is a lightweight framework that helps people, teams and organizations generate
+					value through adaptive solutions for complex problems.” “Scrum is founded on empiricism
+					and lean thinking. Empiricism asserts that knowledge comes from experience and making
+					decisions based on what is observed. Lean thinking reduces waste and focuses on the
+					essentials.”
+					<br />
+					<br />…
+					<br />
+					<br />
+					These are just a few of the things we've learnt throughout our four weeks of scrum
+					training.
+					<br />
+					We've been working on MoVila as a way to demonstrate what we've learnt about Scrum. Let's
+					explore MoVila.
 				</div>
 			</section>
 			<section id='story'>
@@ -31,7 +41,8 @@ const aboutpage = () => {
 					<div className='block-1'>
 						<img src={story_banner_1} id='banner_1'></img>
 						<div className='content-block-1'>
-							An other-worldly location inspiring peace, relaxation and serenity
+							Second week, we learned about Scrum events and Scrum artifacts. This is also the day
+							Scrum 101 appeared
 						</div>
 					</div>
 				</div>
@@ -42,12 +53,18 @@ const aboutpage = () => {
 					<div className='block-3'>
 						<img src={story_banner_2} id='banner_2'></img>
 						<div className='content-block-3'>
-							An other-worldly location inspiring peace, relaxation and serenity
+							First week, we learnt about introduction to Agile and scrum framework as well as Scrum
+							foundations and Srum team
 						</div>
 					</div>
 				</div>
 				<div className='item4'>
-					<div className='block-4'>In the heart of the Swiss Alps, outstanding views abound</div>
+					<div className='block-4'>
+						Theory
+						<br />
+						<br />
+						We were provided knowledge foundation about Scrum, Agile
+					</div>
 				</div>
 				<div className='item5'>
 					<img src={story_banner_3} id='banner_3'></img>
@@ -58,23 +75,23 @@ const aboutpage = () => {
 				<div className='item7'>
 					<div className='block-7'>
 						<img src={story_banner_4} id='banner_4'></img>
-						<div className='content-block-7'>
-							Featuring antique pine panelling, elegant colours and inviting textures, the stylish
-							décor creates a warm and enchanting atmosphere
-						</div>
+						<div className='content-block-7'>We carried out Sprint 1 and Sprint 2 next week</div>
 					</div>
 				</div>
 				<div className='item8'>
 					<div className='content-block-8'>
-						Exquisitely designed rooms far from the disturbances of everyday life
+						Practice
+						<br />
+						<br />
+						The MoVila project is developed by Srum 101.
 					</div>
 				</div>
 				<div className='item9'>
 					<div className='block-9'>
 						<img src={story_banner_5} id='banner_5'></img>
 						<div className='content-block-9'>
-							In 2005, the original building was totally transformed and modernised without losing
-							the spirit of the place, and is now known as LeCrans
+							Final week, we completed Sprint 3 and presented our product-MoVila as well as share
+							how we worked in Scrum framework
 						</div>
 					</div>
 				</div>
