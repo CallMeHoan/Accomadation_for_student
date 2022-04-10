@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+#login_container{
+    display: grid;
+    grid-template-columns: 6fr 4fr;
+    overflow: hidden;
+}
+
+
+.banner_container{
+    margin-top:5vw;
+    margin-bottom: 10vw;
+    width: 23vw;
+    height: 30vw;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+    transition: 1s;
+    top:0vw;
+}
+
+.banner_container:first-child:hover {
+    transform: rotate(-23deg);
+    top:1vw;
+  
+    
+}
+
+.banner_container:first-child{
+    left: 100px;
+    transform: rotate(-15deg);
+ }
+
+.banner_container:last-child:hover {
+    transform: rotate(10deg);
+    top:1vw;
+    transition: 1s;
+   
+}
+.banner_container:last-child{
+   left: -100px;
+   top:4vw;
+   transform: rotate(5deg);
+   transition: 1s;
+}
+
+#img_banner_container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#pattern_banner_container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+
+#login_banner{
+    display: flex;
+    transition: 1s;
+}
+#login_section{
+    width: 50vw;
+    padding-left: 20%;
+}
+
+#login_form {
+   display: block;
+   margin-top: 6vw;
+}
+
+#login_form h1{
+    font-family: Intrepid;
+    width: 100%;
+    font-size: 4vw;
+    color: #452E22;
+    
+}
+#login_form h3{
+    font-family: Intrepid;
+    font-size: 1.5vw;
+    margin-top: 2vw;
+    color: #452E22;
+}
+#login_form input[type="text"]{
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    background: none;
+    border: 1px #452E22 solid;
+    width: 50%;
+    font-size: 1.5vw;
+    font-family: Intrepid;
+    color: #452E22;
+
+  
+}
+#login_form input[type="submit"]{
+    text-decoration: none;
+    color: #452E22;
+    background: #fdfbf4;
+    border: 1px #452E22 solid;
+    font-size: 1.2vw;
+    font-family: Intrepid;
+    width: 40%;
+    height: 3vw;
+    border-radius: 30px;
+    margin-top: 3vw;
+    color: #452E22;
+}
+
+#signup_form{
+    display: none;
+}
+
+#signup_form h1{
+    font-family: Intrepid;
+    width: 100%;
+    font-size: 4vw;
+    color: #293A46;
+    
+}
+#signup_form h3{
+    font-family: Intrepid;
+    font-size: 1.5vw;
+    margin-top: 2vw;
+    color: #293A46;
+}
+#signup_form input[type="text"]{
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    background: none;
+    border: 1px #293A46 solid;
+    width: 50%;
+    font-size: 1.5vw;
+    font-family: Intrepid;
+    color: #293A46;
+
+  
+}
+#signup_form input[type="submit"]{
+    text-decoration: none;
+    color: #452E22;
+    background: #fdfbf4;
+    border: 1px #293A46 solid;
+    font-size: 1.2vw;
+    font-family: Intrepid;
+    width: 40%;
+    height: 3vw;
+    border-radius: 30px;
+    margin-top: 3vw;
+    color: #293A46;
+}
+
+#switch{
+    width: 35%;
+    height: 3vw;
+    font-size: 1.2vw;
+    font-family: Intrepid;
+    background: none;
+    margin-top: 3vw;
+    margin-left: 30%;
+    color: #452E22;
+
+
+}
