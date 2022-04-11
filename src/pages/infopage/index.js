@@ -23,7 +23,6 @@ const Infopage = (props) => {
 					</div>
 					<div className='book_now_container'>
 						<div className='book_price'>From CHF {props.price}</div>
-						<div className='book_btn'>Book Now</div>
 						<div className='book_btn'>Location</div>
 					</div>
 				</div>
