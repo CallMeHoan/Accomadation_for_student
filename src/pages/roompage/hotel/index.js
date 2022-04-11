@@ -1,10 +1,5 @@
 import './styles.css'
-import { Switch, BrowserRouter as Router, Route } from 'react-router-dom'
-import { Suspense, lazy } from 'react'
 import { Link } from 'react-router-dom'
-
-const Infopage = lazy(() => import('../../infopage'))
-const value = 2
 
 const hotel = (props) => {
 	return (
