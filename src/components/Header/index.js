@@ -57,7 +57,9 @@ const Header = () => {
 					<img id='logo' src={Movi} />
 				</section>
 				<section id='book_now'>
-					<button id='book_btn'>Login</button>
+					<button id='book_btn'>
+						<Link to='/login'>Login</Link>
+					</button>
 				</section>
 			</section>
 		</div>
