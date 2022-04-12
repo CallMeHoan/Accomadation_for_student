@@ -1,5 +1,5 @@
 import { useQuery } from 'react-query'
-import API_URL from '../constants/API'
+import { API_URL } from '../constants/API'
 
 export const usePostUser = () => {
 	return (data) => {
