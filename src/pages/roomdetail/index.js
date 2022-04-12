@@ -1,32 +1,30 @@
-import React from 'react'
+import react from 'react'
 import './styles.css'
-import { lazy } from 'react'
-import { useGetAccomadationById } from '../../queries/useAccomadations.queries'
+import { Suspense, lazy } from 'react'
 import { useParams } from 'react-router-dom'
+import { useGetAccomadationById } from '../../queries/useAccomadations.queries'
 
 const Infopage = lazy(() => import('../infopage'))
 
 const Each_info_page = () => {
 	const params = useParams()
-	console.log(params.id)
 	const id = params.id
-	const { data } = useGetAccomadationById(id)
+	console.log(id)
+	const { data } = useGetAccomadationById(1)
 	console.log(data)
 
 	return (
 		<div>
-			{data.map((item) => (
-				<Infopage
-					type={item.type}
-					image={item.image}
-					property={item.property}
-					description={item.description}
-					title={item.title}
-					full_description={item.full_description}
-					full_property={item.full_property}
-					price={item.price}
-				/>
-			))}
+			<Infopage
+				tpe={data?.type}
+				image={data?.image}
+				property={data?.property}
+				description={data?.description}
+				title={data?.title}
+				full_description={data?.full_description}
+				full_property={data?.full_property}
+				price={data?.price}
+			/>
 		</div>
 	)
 }

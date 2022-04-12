@@ -20,7 +20,6 @@ function App() {
 			<Router>
 				<Suspense fallback={<h1>Loading...</h1>}>
 					<Header />
-
 					<Switch>
 						<Route component={Homepage} path='/' exact />
 						<Route component={Roompage} path='/rooms' exact />

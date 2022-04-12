@@ -1,12 +1,11 @@
-import react from 'react'
+import React from 'react'
 import './styles.css'
-
 const Infopage = (props) => {
 	return (
 		<div>
 			<section id='info_banner'>
 				<div id='info_banner_cointainer'>
-					<img id='banner_img' src={props.image} />
+					<img id='banner_img' src={props.image} alt='Room image' />
 				</div>
 			</section>
 			<section className='info_container'>
@@ -16,8 +15,10 @@ const Infopage = (props) => {
 				<div className='info_details_book'>
 					<div className='info_details'>
 						<div className='all_details'>
-							{props.full_property.map((item) => (
-								<div className='detail'>{item}</div>
+							{props.full_property.map((item, index) => (
+								<div key={index} className='detail'>
+									{item}
+								</div>
 							))}
 						</div>
 					</div>
