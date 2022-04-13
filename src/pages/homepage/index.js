@@ -1,14 +1,13 @@
 import React from 'react'
 import { Suspense, lazy } from 'react'
 import './styles.css'
+import { Link } from 'react-router-dom'
 
-import Hotel_room_img_1 from '../../assets/homepage/hotel_pic/hotel_room.png'
-import Hotel_room_img_2 from '../../assets/homepage/hotel_pic/hotel_room_2.png'
-import Hotel_room_img_3 from '../../assets/homepage/hotel_pic/hotel_room_3.png'
-import home_banner from '../../assets/home_banner.png'
-import content2_pic from '../../assets/content2_pic.jpg'
-import content_3_img from '../../assets/content_3_img.jpg'
-import content_3_img_2 from '../../assets/content_3_img_2.jpg'
+import Hotel_room_img_1 from '../../assets/homepage/hotel_pic/hotel_room_4.png'
+import Hotel_room_img_2 from '../../assets/homepage/hotel_pic/hotel_room_5.png'
+import Hotel_room_img_3 from '../../assets/homepage/hotel_pic/hotel_room_6.png'
+import home_banner from '../../assets/home_banner1.jpg'
+import content2_pic from '../../assets/content2_pic1.jpg'
 
 const Hotels = lazy(() => import('./hotels'))
 
@@ -74,62 +73,30 @@ const homepage = () => {
 				</section>
 			</section>
 
-			<section id='content-3'>
-				<div id='content-3-block1'>
-					<div id='header-content-3'>A region steeped in geological and human history</div>
-					<div id='content-3-block1-img'>
-						<img src={content_3_img} />
-					</div>
-					<div id='content-3-block1-content'>
-						<h5>Indulge in a prestigious resort steeped in luxury and magnificence</h5>
-						<h6>
-							Immerse yourself in a world that is truly representative of Switzerland. LeCrans
-							offers a unique glimpse into nature’s rich tapestry, where you can relish in
-							other-worldly scenery and dramatic landscapes. Once the day’s explorations and
-							indulgences are complete, enjoy sumptuous architecture and splendid amenities, all of
-							which are in perfect harmony with the distinctive surroundings and scenery. Blending
-							sight, smell, sound, taste and touch, everything about LeCrans is intricately executed
-							for a truly immersive experience. Our Michelin-starred restaurant, fine wine cellar
-							and bar, cigar lounge and world-class spa complete this unforgettable experience.
-						</h6>
-					</div>
-				</div>
-				<div id='content-3-block2'>
-					<div id='content-3-block2-img'>
-						<img src={content_3_img_2} />
-					</div>
-					<div id='content-3-block2-content'>
-						<h6>
-							Immerse yourself in a world that is truly representative of Switzerland. LeCrans
-							offers a unique glimpse into nature’s rich tapestry, where you can relish in
-							other-worldly scenery and dramatic landscapes. Once the day’s explorations and
-							indulgences are complete, enjoy sumptuous architecture and splendid amenities, all of
-							which are in perfect harmony with the distinctive surroundings and scenery. Blending
-							sight, smell, sound, taste and touch, everything about LeCrans is intricately executed
-							for a truly immersive experience. Our Michelin-starred restaurant, fine wine cellar
-							and bar, cigar lounge and world-class spa complete this unforgettable experience.
-						</h6>
-						<button className='discovery-hotel'>Discover More</button>
-					</div>
-				</div>
-			</section>
 			<section id='content-4'>
-				<div id='content-4-header'>
-					Each themed room and suite takes you to a different region or mountain of the world, from
-					the Himalayas to the Kilimanjaro.
-				</div>
-				<button id='content-4-btn'>Discover Room</button>
+				<div id='content-4-header'>Discover the top hostels at the most affordable costs.</div>
+				<Link to='/rooms'>
+					{' '}
+					<button id='content-4-btn'>Discover</button>
+				</Link>
 			</section>
 			<section id='selection-banner'>
 				<section id='selection-place'>
-					{hotels.map((item) => (
-						<Hotels
-							type={item.type}
-							image={item.image}
-							property={item.property}
-							description={item.description}
-						/>
-					))}
+					<div className='hotel_homepage'>
+						<div className='img-hotel_homepage'>
+							<img src={Hotel_room_img_1} />
+						</div>
+					</div>
+					<div className='hotel_homepage'>
+						<div className='img-hotel_homepage'>
+							<img src={Hotel_room_img_2} />
+						</div>
+					</div>
+					<div className='hotel_homepage'>
+						<div className='img-hotel_homepage'>
+							<img src={Hotel_room_img_3} />
+						</div>
+					</div>
 				</section>
 			</section>
 		</div>

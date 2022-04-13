@@ -211,6 +211,7 @@
     margin-left: 39%;
     margin-top: 2.4vw;
     transition: 1s;
+    cursor: pointer;
   }
   
   #content-4-btn:hover {
@@ -234,4 +235,27 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 1%;
+  }
+
+  .img-hotel_homepage {
+    width: 100%;
+    height: 18vw;
+    background: #061f14;
+    overflow: hidden;
+  }
+  .img-hotel_homepage img {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s, filter 0.5s ease-in-out;
+    filter: blur(3px);
+    transform: scale(1);
+  }
+  .hotel_homepage{
+    width: 100%;
+    cursor: pointer;
+    display: grid;
+  }
+  .hotel_homepage:hover img {
+    filter: blur(0);
+    transform: scale(1.2);
   }
