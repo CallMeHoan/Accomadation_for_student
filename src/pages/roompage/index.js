@@ -9,6 +9,8 @@ const Hotel = lazy(() => import('./hotel'))
 
 const Roompage = () => {
 	const { data } = useGetAccomadation()
+	console.log(data)
+
 	return (
 		<div>
 			<section id='room_banner'>
@@ -19,15 +21,12 @@ const Roompage = () => {
 			<section id='menu-selection'>
 				{data?.map((item) => (
 					<Hotel
+						key={item.id}
 						id={item.id}
-						type={item.type}
-						image={item.image}
-						property={item.property}
+						name={item.name}
+						image={item.image_Url}
+						address={item.address}
 						description={item.description}
-						title={item.title}
-						full_description={item.full_description}
-						full_property={item.full_property}
-						price={item.price}
 					/>
 				))}
 			</section>

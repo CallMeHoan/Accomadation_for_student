@@ -10,10 +10,10 @@ const hotel = (props) => {
 				</div>
 				<div className='content-hotel'>
 					<div className='header-content-hotel'>
-						{props.type}
+						{props.name}
 						<div className='hotel-content-line'></div>
 					</div>
-					<div className='property-content-hotel'>{props.property}</div>
+					<div className='property-content-hotel'>{props.address}</div>
 					<div className='description-content-hotel'>{props.description}</div>
 				</div>
 				<button className='discovery-hotel'>Discover More</button>
