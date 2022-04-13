@@ -19,7 +19,7 @@ const Roompage = () => {
 				</div>
 			</section>
 			<section id='menu-selection'>
-				{data?.map((item) => (
+				{data?.data.map((item) => (
 					<Hotel
 						key={item.id}
 						id={item.id}
