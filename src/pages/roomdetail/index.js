@@ -1,6 +1,6 @@
 import react from 'react'
 import './styles.css'
-import { Suspense, lazy } from 'react'
+import { lazy } from 'react'
 import { useParams } from 'react-router-dom'
 import { useGetAccomadationById } from '../../queries/useAccomadations.queries'
 
@@ -9,21 +9,22 @@ const Infopage = lazy(() => import('../infopage'))
 const Each_info_page = () => {
 	const params = useParams()
 	const id = params.id
-	console.log(id)
-	const { data } = useGetAccomadationById(1)
-	console.log(data)
+	const { data } = useGetAccomadationById(id)
 
 	return (
 		<div>
 			<Infopage
-				tpe={data?.type}
-				image={data?.image}
-				property={data?.property}
+				image={data?.image_Url}
+				name={data?.name}
+				address={data?.address}
 				description={data?.description}
-				title={data?.title}
-				full_description={data?.full_description}
-				full_property={data?.full_property}
+				available={data?.available}
+				floor={data?.floor}
 				price={data?.price}
+				rooms={data?.rooms}
+				toilets={data?.toilets}
+				area={data?.area}
+				wifi={data?.width}
 			/>
 		</div>
 	)

@@ -1,5 +1,5 @@
-import react from 'react'
-
+import React, { useState } from 'react'
+import { useCreateAccount } from '../../queries/useAccount.queries'
 import './styles.css'
 import user_login_img from './pic/user_login.png'
 import user_login_pattern from './pic/user_login_pattern.png'
@@ -7,7 +7,12 @@ import user_signup_img from './pic/user_signup.png'
 import user_signup_pattern from './pic/user_signup_pattern.png'
 
 let flag = true
-const login = () => {
+const Login = () => {
+	const onCreateAccount = useCreateAccount()
+	const [info, setInfo] = useState({
+		username: '',
+		password: '',
+	})
 	return (
 		<div>
 			<section id='login_container'>
@@ -33,20 +38,31 @@ const login = () => {
 								Hello, new friend!
 								<br /> Get yourself a new account{' '}
 							</h1>
-							<h3>Your name</h3>
-							<input type='text' name='signup_name' />
 							<h3>Your account</h3>
-							<input type='text' name='signup_acc' />
+							<input
+								type='text'
+								name='signup_acc'
+								onChange={(e) => setInfo({ ...info, username: e.target.value })}
+								placeholder='username'
+							/>
 							<h3>Your password</h3>
-							<input type='text' name='signup_pas' />
-							<h3>Enter your password again</h3>
-							<input type='text' name='confirm_pas' />
-							<h3>Your Phone</h3>
-							<input type='text' name='signup_phone' />
-							<h3>Your Mail</h3>
-							<input type='text' name='signup_mail' />
-							<br />
-							<input type='submit' value='Sign up' />
+							<input
+								type='password'
+								name='signup_pas'
+								onChange={(e) => setInfo({ ...info, password: e.target.value })}
+								placeholder='password'
+							/>
+							<h3></h3>
+							<input
+								onClick={() => {
+									onCreateAccount({
+										username: info.username,
+										password: info.password,
+									})
+								}}
+								type='submit'
+								value='Sign up'
+							/>
 						</form>
 					</section>
 				</section>
@@ -67,7 +83,7 @@ const login = () => {
 	)
 }
 
-export default login
+export default Login
 
 function Changepage() {
 	let login_form = document.getElementById('login_form')

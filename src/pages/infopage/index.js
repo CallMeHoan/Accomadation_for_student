@@ -9,17 +9,21 @@ const Infopage = (props) => {
 				</div>
 			</section>
 			<section className='info_container'>
-				<div className='info_name'>{props.type}</div>
-				<div className='info_title'>{props.title}</div>
-				<div className='info_description'>{props.full_description}</div>
+				<div className='info_name'>{props.name}</div>
+				<div className='info_title'>{props.address}</div>
+				<div className='info_description'>{props.description}</div>
 				<div className='info_details_book'>
 					<div className='info_details'>
 						<div className='all_details'>
-							{props.full_property.map((item, index) => (
-								<div key={index} className='detail'>
-									{item}
-								</div>
-							))}
+							<div className='detail'>{props.available} People</div>
+							<div className='detail'>{props.floor} Floors</div>
+							<div className='detail'>{props.toilets} Toilets</div>
+							<div className='detail'>{props.area} m2</div>
+							<div className='detail'>
+								{props.wifi ? <span>Wifi Available</span> : <span>No Wifi</span>}
+							</div>
+							<div className='detail'>{props.rooms} Rooms</div>
+							<div className='detail'>{props.price} / month</div>
 						</div>
 					</div>
 					<div className='book_now_container'>
@@ -32,16 +36,16 @@ const Infopage = (props) => {
 					<div className='Gallary_picture'>
 						<div className='pictures'>
 							<div className='picture_container'>
-								<img src={props.image}></img>
+								<img src={props.image} alt='Room image'></img>
 							</div>
 							<div className='picture_container'>
-								<img src={props.image}></img>
+								<img src={props.image} alt='Room image'></img>
 							</div>
 							<div className='picture_container'>
-								<img src={props.image}></img>
+								<img src={props.image} alt='Room image'></img>
 							</div>
 							<div className='picture_container'>
-								<img src={props.image}></img>
+								<img src={props.image} alt='Room image'></img>
 							</div>
 						</div>
 					</div>

@@ -145,6 +145,19 @@
 
   
 }
+#signup_form input[type="password"]{
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    background: none;
+    border: 1px #293A46 solid;
+    width: 50%;
+    font-size: 1.5vw;
+    font-family: Intrepid;
+    color: #293A46;
+
+  
+}
 #signup_form input[type="submit"]{
     text-decoration: none;
     color: #452E22;
