@@ -14,17 +14,17 @@ const Each_info_page = () => {
 	return (
 		<div>
 			<Infopage
-				image={data?.image_Url}
-				name={data?.name}
-				address={data?.address}
-				description={data?.description}
-				available={data?.available}
-				floor={data?.floor}
-				price={data?.price}
-				rooms={data?.rooms}
-				toilets={data?.toilets}
-				area={data?.area}
-				wifi={data?.width}
+				image={data?.data.image_Url}
+				name={data?.data.name}
+				address={data?.data.address}
+				description={data?.data.description}
+				available={data?.data.available}
+				floor={data?.data.floor}
+				price={data?.data.price}
+				rooms={data?.data.rooms}
+				toilets={data?.data.toilets}
+				area={data?.data.area}
+				wifi={data?.data.width}
 			/>
 		</div>
 	)
