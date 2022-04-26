@@ -29,7 +29,7 @@ const Header = () => {
 							<Link to='/rooms'>
 								<a className='cat' href='#'>
 									{' '}
-									Accommodation{' '}
+									Reservation{' '}
 								</a>
 							</Link>
 						</li>

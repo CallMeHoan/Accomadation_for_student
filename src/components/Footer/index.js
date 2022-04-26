@@ -18,7 +18,7 @@ const Footer = () => {
 					<div id='contact'>
 						<div className='footer-place-header'>Contact</div>
 						<div className='footer-place-contact'>
-							+84 (0) 779 604 768 <br />
+							+84 (0) 377 961 577 <br />
 							movila@gmail.com
 						</div>
 						<div className='footer-place-contact'>
@@ -45,7 +45,7 @@ const Footer = () => {
 								</li>
 								<li>
 									<Link to='/rooms'>
-										Accommodation
+										Reservation
 										<div className='footer-line'></div>
 									</Link>
 								</li>
@@ -99,7 +99,7 @@ const Footer = () => {
 				<div id='footer-place-3'>
 					<p>&copy Copyright . LeCrans</p>
 					<p>2022. All rights reserved.</p>
-					<p>Designed by SRUM.TEAM.101</p>
+					<p>Designed by OOSE Group04</p>
 				</div>
 			</section>
 		</div>
